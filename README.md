@@ -1,1 +1,9 @@
-# Discover_Beyond
+<img width="1470" alt="Screenshot 2024-12-13 at 9 40 09 AM" src="https://github.com/user-attachments/assets/54c43b69-3e5d-4ee5-aede-cad32c6ac976" />
+<img width="1470" alt="Screenshot 2024-12-13 at 9 40 02 AM" src="https://github.com/user-attachments/assets/7c3a2cfd-f6bc-4ff0-8019-40f035ffd28b" />
+<img width="1470" alt="Screenshot 2024-12-13 at 9 35 54 AM" src="https://github.com/user-attachments/assets/7f11d3c5-6815-4392-be75-044a1d85eb2f" />
+<img width="1470" alt="Screenshot 2024-12-13 at 9 35 32 AM" src="https://github.com/user-attachments/assets/8c2005c2-22a6-4cda-8096-2f69f243f702" />
+<img width="1470" alt="Screenshot 2024-12-13 at 9 35 19 AM" src="https://github.com/user-attachments/assets/21f2ac1f-324e-402e-b93a-0a0c1354b51b" />
+<img width="1470" alt="Screenshot 2024-12-13 at 9 35 07 AM" src="https://github.com/user-attachments/assets/39bd1629-7927-43f8-8f60-a46753386ccf" />
+<img width="1470" alt="Screenshot 2024-12-13 at 9 34 52 AM" src="https://github.com/user-attachments/assets/f3e17927-42ab-474e-823d-04a7ae5fa195" />
+<img width="1470" alt="Screenshot 2024-12-13 at 9 34 45 AM" src="https://github.com/user-attachments/assets/3c833ef3-fa17-43eb-af68-1f7fdb5a4404" />
+<img width="1470" alt="Screenshot 2024-12-13 at 9 34 34 AM" src="https://github.com/user-attachments/assets/64eda5b2-d0bc-4c04-847a-f44ac206decd" />
