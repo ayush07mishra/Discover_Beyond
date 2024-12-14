@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('https://plus.unsplash.com/premium_photo-1680732290711-2595249800f8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmVhY2glMjBldmVuaW5nfGVufDB8fDB8fHww') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        input,
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        input {
+            background: rgba(255, 255, 255, 0.9);
+            color: black;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid lightblue;
+        }
+
+        button {
+            background: linear-gradient(90deg, lightblue, blue);
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background: linear-gradient(90deg, yellow, #4CAF50);
+            transform: scale(1.05);
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: popIn 1s ease;
+        }
+
+        @keyframes popIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Travel Recommendation</h1>
+        <label for="best_time">Enter the best time to travel (e.g., Summer, Winter):</label>
+        <input type="text" id="best_time" placeholder="Enter the season">
+
+        <label for="people_travel_with">Enter the number of people traveling (e.g., 1, 2, 3):</label>
+        <input type="number" id="people_travel_with" placeholder="Number of people">
+
+        <label for="days_to_travel">Enter the number of days you want to travel (e.g., 4, 7, 10):</label>
+        <input type="number" id="days_to_travel" placeholder="Number of days">
+
+        <button onclick="getRecommendation()">Get Recommendation</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function getRecommendation() {
+            const bestTime = document.getElementById('best_time').value;
+            const peopleTravelWith = document.getElementById('people_travel_with').value;
+            const daysToTravel = document.getElementById('days_to_travel').value;
+
+            if (!bestTime || !peopleTravelWith || !daysToTravel) {
+                document.getElementById('result').innerText = "Please fill in all the fields.";
+                return;
+            }
+
+            // Simulating a recommendation based on inputs (replace with actual logic or API call)
+            let recommendedCountry = "";
+            if (bestTime.toLowerCase() === "summer") {
+                recommendedCountry = "Italy";
+            } else if (bestTime.toLowerCase() === "winter") {
+                recommendedCountry = "Switzerland";
+            } else {
+                recommendedCountry = "Thailand";
+            }
+
+            document.getElementById('result').innerText = `Recommended Country: ${recommendedCountry}`;
+        }
+    </script>
+</body>
+
+</html>
